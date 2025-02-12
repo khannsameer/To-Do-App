@@ -1,0 +1,29 @@
+.shiny-text {
+  color: transparent; /* Ensures full gradient effect */
+  background: linear-gradient(
+    120deg,
+    rgba(237, 239, 233, 0.8) 20%,
+    /* Adjusted for smoother transition */ rgb(38, 4, 235) 50%,
+    rgba(239, 233, 233, 0.8) 80%
+  );
+  background-size: 400% 100%; /* Wider animation range */
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 10s linear infinite;
+  will-change: background-position; /* Optimized for performance */
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -300% 50%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+  color: inherit; /* Resets to default text color */
+}

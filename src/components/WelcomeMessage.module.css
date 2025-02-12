@@ -1,0 +1,6 @@
+.welcome {
+  font-size: 40px; /* Good for visibility, but consider using "rem" for responsiveness */
+  font-weight: 700; /*  Ensures bold text for emphasis */
+  margin-top: 50px; /*  Creates spacing from the top */
+  text-align: center; /*  Centers text horizontally */
+}
