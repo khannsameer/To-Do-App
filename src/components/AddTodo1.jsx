@@ -44,6 +44,7 @@ function AddTodo1({ onNewItem }) {
         <div className="row itemRow">
           <div className="col">
             <input
+              className="text"
               type="text"
               ref={todoNameElement}
               id="username"
@@ -54,6 +55,7 @@ function AddTodo1({ onNewItem }) {
           </div>
           <div className="col">
             <input
+              className="date"
               type="date"
               ref={dueDateElement}
               id="date-input"
